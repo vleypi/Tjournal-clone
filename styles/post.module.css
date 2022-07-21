@@ -1,0 +1,123 @@
+.post{
+    width: 600px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.post:nth-child(1){
+    margin-top: 30px;
+}
+
+.post .contentHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.post .contentHeader .postInfo{
+    display: flex;
+    align-items: center;
+}
+
+.post .contentHeader .postInfo .author{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post .contentHeader .postInfo .published{
+    margin-right: 20px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.post .contentHeader .subscribe{
+    border: none;
+    font-size: 14px;
+    background: none;
+    color: rgb(46, 0, 121);
+    cursor: pointer;
+}
+
+.post .contentHeader .subscribe:hover{
+    transition: 0.2s;
+    color: rgb(89, 0, 231);
+}
+
+.post .title{
+    cursor: pointer;
+}
+
+.post .title p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.post .text{
+    cursor: pointer;
+}
+
+.post .text p{
+    font-size: 17px;
+}
+
+.post .stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.post .stats .comments{
+    display: flex;
+    align-items: center;
+}
+
+.post .stats .comments button{
+    width: 35px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post .stats .comments button:hover{
+    background: #f0f0f0;
+}
+
+.post .stats .reviews{
+    display: flex;
+    align-items: center;
+}
+
+.post .stats .reviews button{
+    width: 35px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post .stats .reviews button:hover{
+    background: #e2e1e1;
+}
+
+.post .stats .reviews .reviewsDown{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.post .stats .reviews .reviewsUp{
+    margin-left: 10px;
+}

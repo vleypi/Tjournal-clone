@@ -1,0 +1,34 @@
+{
+  "name": "blogjournal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@editorjs/editorjs": "^2.25.0",
+    "@editorjs/header": "^2.6.2",
+    "@editorjs/list": "^1.7.0",
+    "@editorjs/marker": "^1.2.2",
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
+    "cookie": "^0.5.0",
+    "editorjs-html": "^3.4.2",
+    "editorjs-react-renderer": "^3.2.0",
+    "js-cookie": "^3.0.1",
+    "next": "^12.1.6",
+    "next-redux-wrapper": "^7.0.5",
+    "nookies": "^2.5.2",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-textarea-autosize": "^8.3.4",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
+  }
+}

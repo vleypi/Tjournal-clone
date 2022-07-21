@@ -1,0 +1,64 @@
+.editor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    background: white;
+    min-height: calc(100vh - 60px);
+}
+
+.editor .blog{
+    margin-bottom: 20px;
+}
+
+.editor .header{
+    width: 600px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 34px;
+    font-weight: bold;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.editor .tools{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    z-index: 2;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.editor .tools .container{
+    width: 600px;
+}
+
+.editor .tools button{
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.editor .tools .publish{
+    background: #4683d9;
+    color: white;
+    
+}
+
+.editor .tools .demo{
+    border: none;
+    padding: 5px 10px;
+    background: none;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,128 @@
+.profile{
+    width: 800px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.profileMain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileMain .profileName{
+    font-size: 30px;
+    font-weight: bold;
+}
+.profileMain button{
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.profileMain .settings{
+    background: none;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.profileMain .write{
+    background: #4683d9;
+    color: white;
+}
+
+.description{
+    margin: 20px 0;
+}
+
+.description button{
+    border: none;
+    background: none;
+    color: #4683d9;
+    text-decoration: underline;
+}
+
+.registered{
+    margin: 20px 0;
+}
+
+.tabs button{
+    padding: 20px 0;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.tabs button:hover{
+    transition: 0.2s;
+    color: #4683d9;
+}
+
+.tabs button:disabled{
+    color: black;
+}
+
+.tabs button p{
+    margin: 0 10px;
+}
+
+.tabs .active{
+    border-bottom: 3px #4683d9 solid;
+}
+
+
+.profileCreatePost{
+    width: 800px;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profileCreatePost .profileCreatePostName{
+    font-weight: bold;
+}
+
+.profileCreatePost .profileCreatePostNewPost{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.384);
+    margin-left: 10px;
+    cursor: text;
+}
+
+.profileNone{
+    margin-top: 15px;
+    width: 800px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profileNone .profileNoneSuggestion{
+    font-size: 21px;
+}
+
+.profileNone button{
+    border: none;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 21px;
+    background: none;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,108 @@
+.header{
+    position: fixed;
+    width: 100%;
+    
+    background: rgb(245, 208, 159);
+    
+    z-index: 3;
+    top: 0;
+    height: 60px;
+    display: grid; 
+    grid-template-columns: 1fr 600px 1fr; 
+    grid-template-rows: 1fr; 
+    gap: px px; 
+    grid-template-areas: 
+        ". . ."; 
+    justify-content: center; 
+}
+
+
+.header button{
+    background: none;
+    border: none;
+    width: 20px;
+    cursor: pointer;
+}
+
+.menuLogo, .searchCreate,.notiSign{
+    display: flex;
+    align-items: center;
+}
+
+.menuLogo{
+    padding-left: 20px;
+    width: 200px;
+}
+
+.menuLogo .menu {
+    margin-right: 10px;
+}
+
+.menuLogo .logo p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.notiSign{
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.notiSign .notification{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.notiSign .sigin{
+    width: 80px;
+}
+
+.searchCreate{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.searchCreate .search{
+    width: 470px;
+    font-size: 16px;
+    padding: 10px 15px;  
+    border-radius: 10px;
+    border: 3px transparent solid;
+    outline: none;
+    background: rgb(255, 233, 204);
+}
+
+.searchCreate .search:hover{
+    transition: 0.3s;
+    background: white;
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+    box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+}
+
+.searchCreate .search:focus{
+    transition: 0.3s;
+    background: white;
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+    box-shadow: 0px 0px 6px 3px rgba(253, 168, 55, 1);
+}
+
+.searchCreate .create{
+    background: white;
+    width: 110px;
+    margin-left: 20px;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.searchCreate .create:hover{
+    transition: 0.2s;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
