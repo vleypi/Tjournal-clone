@@ -6,6 +6,7 @@ import signinSlice from './slices/signin'
 import navSlice from './slices/nav'
 import  postsSlice from './slices/posts'
 import preloaderSlice from './slices/preloader'
+import  editorSlice from './slices/editor'
 
 
 const makeStore = () => configureStore({
@@ -14,7 +15,8 @@ const makeStore = () => configureStore({
         signin: signinSlice,
         nav: navSlice,
         posts: postsSlice,
-        preloader: preloaderSlice
+        preloader: preloaderSlice,
+        editor: editorSlice
     },
     devTools: true
 })

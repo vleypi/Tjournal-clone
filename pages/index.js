@@ -23,11 +23,12 @@ const Index = ({posts}) =>{
 export const getStaticProps = () =>{
     const posts = [
         {
-            author: 'Афк черть',
+            author: 'Автор',
+            user: '/p/wqeqwe',
             published: '15 часов назад',
             subcribed: false,
-            title: '12312312',
-            text: '31231.',
+            header: '12312312',
+            blocks: [],
             comments: 69,
             reviews: 15
         }

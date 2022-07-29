@@ -7,10 +7,14 @@ import TextareaAutosize from 'react-textarea-autosize';
 import { saveDraft } from '../../controllers/draftController';
 import styles from '../../styles/editor.module.css'
 import Tools from './Tools/Tools'
+import Output from 'editorjs-react-renderer'
+import { setDraft } from '../../redux/slices/editor';
+import { useDispatch } from 'react-redux';
 
 
 const Editor = ({draft}) => {
 
+    const dispatch = useDispatch()
     const header = useRef()
     
     const editor = new EditorJS({
@@ -50,6 +54,7 @@ const Editor = ({draft}) => {
                 header: header.current.value,
                 draft
             })
+            dispatch(setDraft({header: header.current.value,blocks: outputData.blocks}))
         })
     }
 
@@ -65,6 +70,7 @@ const Editor = ({draft}) => {
     }
 
     useEffect(()=>{    
+        dispatch(setDraft({header: draft.header,blocks: draft.blocks}))
         header.current.value = draft.header
         header.current.addEventListener('keydown',(event)=>{
             if(header.current.value.length > 119){
@@ -87,7 +93,7 @@ const Editor = ({draft}) => {
                 onChange={textareaSaver}
             />
             <div id="editorjs" style={{width: '600px'}}></div>
-            <Tools />
+            <Tools draft={draft} />
         </div>
     )
 }

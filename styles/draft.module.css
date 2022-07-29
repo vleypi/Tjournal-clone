@@ -1,0 +1,64 @@
+.draft{
+    width: 1000px;
+    background: white;
+    padding: 30px 200px;
+    padding-bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.draft .headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.draft .headerSettings{
+    display: flex;
+    align-items: center;
+}
+
+.draft .draftMarker{
+    text-transform: uppercase;
+    font-size: 10px;
+    background: rgba(245,235,111,0.29);
+    padding: 2px;
+    margin-right: 20px;
+}
+
+.draft .deleteDraft, .editDraft{
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.draft .headerName{
+    font-weight: bold;
+}
+
+.draft .draftsHeader{
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.draft .content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+}
+
+.draft .preloader{
+    height: 17px;
+    background: rgb(235, 235, 235);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
