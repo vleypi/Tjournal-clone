@@ -34,7 +34,7 @@ const Post = ({post,profile}) => {
               </button>
               <button 
                 className={styles.editPost}
-                onClick={()=>router.push('/')}
+                onClick={()=>router.push('/posteditor/'+post.postid)}
               >
                 <Image src={edit} className={styles.editPostImg} width="18" height="18"/>
               </button>

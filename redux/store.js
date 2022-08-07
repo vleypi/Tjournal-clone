@@ -7,6 +7,7 @@ import navSlice from './slices/nav'
 import  postsSlice from './slices/posts'
 import preloaderSlice from './slices/preloader'
 import  editorSlice from './slices/editor'
+import  postEditorSlice  from './slices/posteditor'
 
 
 const makeStore = () => configureStore({
@@ -16,7 +17,8 @@ const makeStore = () => configureStore({
         nav: navSlice,
         posts: postsSlice,
         preloader: preloaderSlice,
-        editor: editorSlice
+        editor: editorSlice,
+        posteditor: postEditorSlice
     },
     devTools: true
 })
