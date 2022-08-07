@@ -52,9 +52,9 @@ const Editor = ({draft}) => {
             await saveDraft({
                 outputData: outputData,
                 header: header.current.value,
-                draft
+                draft,
+                dispatch
             })
-            dispatch(setDraft({header: header.current.value,blocks: outputData.blocks}))
         })
     }
 
@@ -63,9 +63,14 @@ const Editor = ({draft}) => {
     const textareaSaver = () => {
         clearTimeout(autosave)
 
-        autosave = setTimeout(()=>{
+        if(header.current.value){
+            autosave = setTimeout(()=>{
+                save()
+            },1000)
+        }
+        else{
             save()
-        },1000)
+        }
         
     }
 

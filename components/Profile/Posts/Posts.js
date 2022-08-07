@@ -6,9 +6,10 @@ import None from './None/None'
 
 const Posts = ({profile}) => {
 
-    const posts = profile.posts.length ? profile.posts.map(post=>{
+    console.log(profile.posts)
+    const posts = profile.posts.length ? profile.posts.map(post=>(
         <Post post={post} profile={profile}/>
-    }) : <None profile={profile}/>
+    )) : <None profile={profile}/>
 
     return (
             <div>

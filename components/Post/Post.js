@@ -2,20 +2,10 @@ import styles from '../../styles/post.module.css'
 import Image from 'next/image'
 import comments from '../../public/comments.png'
 import arrow from '../../public/arrow-up.png'
-import { useDispatch } from 'react-redux'
-import { setDislikes, setLikes } from '../../redux/slices/posts'
+
 
 const Post = ({news}) => {
 
-    const dispatch = useDispatch()
-
-    const like = () =>{
-        dispatch(setLikes())
-    }
-
-    const dislike = () =>{
-        dispatch(setDislikes())
-    }
 
     return (
         <div className={styles.post}>
@@ -40,11 +30,11 @@ const Post = ({news}) => {
                     <p>{news.comments}</p>
                 </div>
                 <div className={styles.reviews}>
-                    <button className={styles.reviewsDown} onClick={dislike}>
+                    <button className={styles.reviewsDown}>
                         <Image src={arrow} />
                     </button>           
                     <p>{news.reviews}</p>
-                    <button className={styles.reviewsUp} onClick={like}>
+                    <button className={styles.reviewsUp}>
                         <Image src={arrow} />
                     </button>
                 </div>

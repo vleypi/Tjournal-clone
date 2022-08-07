@@ -179,3 +179,124 @@
     font-size: 25px;
     font-weight: bold;
 }
+
+
+.post + .post{
+    margin: 25px 0;
+}
+.post{
+    width: 800px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.post .headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .headerSettings{
+    display: flex;
+    align-items: center;
+}
+
+.post .postMarker{
+    text-transform: uppercase;
+    font-size: 10px;
+    background: rgba(245,235,111,0.29);
+    padding: 2px;
+    margin-right: 20px;
+}
+
+.post .deletePost, .editPost{
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.post .headerName{
+    font-weight: bold;
+}
+
+.post .postsHeader{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.post .stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.post .stats .comments{
+    display: flex;
+    align-items: center;
+}
+
+.post .stats .comments button{
+    width: 35px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post .stats .comments button:hover{
+    background: #f0f0f0;
+}
+
+.post .stats .reviews{
+    display: flex;
+    align-items: center;
+}
+
+.post .stats .reviews button{
+    width: 35px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post .stats .reviews button:hover{
+    background: #e2e1e1;
+}
+
+.post .stats .reviews .reviewsDown{
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.post .stats .reviews .reviewsUp{
+    margin-left: 10px;
+}
+
+.post .postContent {
+    margin-top: 20px;
+}
+
+.post .postContent h3{
+    font-size: 25px;
+}

@@ -1,5 +1,6 @@
 import axios from 'axios'
 import nookies from 'nookies'
+import { setDraft } from '../redux/slices/editor'
 
 const errorRedirect = {
     redirect: {
@@ -19,6 +20,7 @@ export const saveDraft = async (props) =>{
         },{
             withCredentials: true
         })
+        props.dispatch(setDraft({header: props.header,blocks: props.outputData}))
     }
     catch(err){
         return errorRedirect

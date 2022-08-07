@@ -8,16 +8,34 @@ const errorRedirect = {
     }
 }
 
+
+
 export const publishPost = async (props) =>{
     try{
         const res = await axios.post('http://localhost:5001/api/post/publishPost', {
             data: {
-                header: props.header,
-                blocks: props.blocks
+                draft: props.draft
             }
         },{
             withCredentials: true
         })
+        props.router.replace('/')
+    }
+    catch(err){
+        return errorRedirect
+    }
+}
+
+export const deletePost = async (props) =>{
+    try{
+        const res = await axios.post('http://localhost:5001/api/post/deletePost', {
+            data: {
+                post: props.post,
+            }
+        },{
+            withCredentials: true
+        })
+        props.router.replace(props.router.asPath)
     }
     catch(err){
         return errorRedirect

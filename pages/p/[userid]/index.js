@@ -7,7 +7,6 @@ import { getProfile } from "../../../controllers/profileController"
 
 
 const UserID = ({profile}) =>{
-    
     return(
         <Container>
           <div className="contentProfile">

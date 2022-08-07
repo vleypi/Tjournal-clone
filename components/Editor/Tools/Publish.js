@@ -1,22 +1,19 @@
 import styles from '../../../styles/editor.module.css'
 import { useSelector } from 'react-redux'
 import { publishPost } from '../../../controllers/postController'
-import { useEffect } from 'react'
-
+import { useRouter } from 'next/router'
+ 
 const Publish = ({draft}) => {
 
+    const router = useRouter()
     const draftSelector = useSelector(({editor})=>editor)
 
     const publish = async () => {
-        await publishPost({
-            header: draftSelector.header,
-            blocks: draftSelector.blocks
+        const res = await publishPost({
+            draft,
+            router
         })
     }
-
-    useEffect(()=>{
-        console.log(2)
-    },[draftSelector.blocks, draftSelector.header])
 
     return (
         <button 
