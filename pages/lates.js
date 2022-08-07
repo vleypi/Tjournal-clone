@@ -4,7 +4,7 @@ const Profile = ({news}) =>{
     return(
         <>
             <Container title={'Профиль'}>
-                лох
+                
             </Container>
         </>
     )

@@ -5,7 +5,7 @@ const Profile = ({news}) =>{
     return(
         <>
             <Container title={'Blog - новости'}>
-                лох
+                
             </Container>
         </>
     )
